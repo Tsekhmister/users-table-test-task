@@ -1,72 +1,105 @@
 .tableWrapper {
-    max-width: 1440px;
-    padding-top: 100px;
-    margin: 0 auto;    
- }
+  max-width: 1440px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
 
- .loading {
+.loading {
   max-width: 1280px;
   margin: 150px auto;
- }
- .loading h2 {
+}
+
+.loading h2 {
   text-align: center;
- }
+}
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    margin: 1rem 0;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  tr {
-    border: 1px solid #ddd;
-  }
-  
-  td {
-    padding: 8px;
-    border: 1px solid #ddd;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #e0e0e0;
-  }
-  
-  th, td {
-    text-align: center;
-  }
-  
-  .pagination {
-    width: 200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
-    font-size: 24px;
-  }
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #3498db;
+  margin: 1rem 0;
+}
 
-  .active-page {
-    border: 2px solid blue;
-    padding: 5px 10px;
-  }
+th {
+  background-color: #6ab0e1;
+  border: 1px solid #2980b9;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
 
-  .pagination-arrows:not(.left-position-off):hover {
-    cursor: pointer;
-  }
+tr {
+  border: 1px solid #2980b9;
+}
 
-  .left-position-off {
-    opacity: 20%;
-  }
+td {
+  padding: 8px;
+  border: 1px solid #2980b9;
+}
+
+tr:nth-child(even) {
+  background-color: #ebf5fb;
+}
+
+tr:hover {
+  background-color: #d6eaf8;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+.pagination {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.active-page {
+  border: 2px solid #ff6b6b;
+  padding: 5px 10px;
+}
+
+.pagination-arrows:not(.left-position-off):hover {
+  cursor: pointer;
+}
+
+.left-position-off {
+  opacity: 0.6;
+}
+
+.number-page:hover {
+  cursor: pointer;
+}
+
+.change-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.change-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-change-mode {
+  margin-right: 15px;
+  margin-top: 0;
+  width: 80%;
+}
+
+.input-error {
+  font-size: 14px;
+  color: #e74c3c;
+  text-align: center;
+}

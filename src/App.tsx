@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       {isAuthenticated ? <Table /> : <LoginForm />}
-      {/* {false ? <Table /> : <LoginForm />} */}
     </div>
   );
 }

@@ -19,7 +19,7 @@ const initialState: AuthState = {
 };
 
 const loginApiEndpoint = async (credentials: Credentials) => {
-  const response = await fetch("http://146.190.118.121/api/login/", {
+  const response = await fetch("https://technical-task-api.icapgroupgmbh.com/api/login/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

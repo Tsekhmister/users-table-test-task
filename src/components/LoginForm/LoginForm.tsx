@@ -35,9 +35,19 @@ const LoginForm: React.FC = () => {
       } catch (error) {
         if (error instanceof Error) {
           setError(error.message);
-        } else if (error && (error as any).response && (error as any).response.status === 401) {
-          setError("Invalid credentials. Please check your username and password.");
-        } else if (error && (error as any).response && (error as any).response.status === 500) {
+        } else if (
+          error &&
+          (error as any).response &&
+          (error as any).response.status === 401
+        ) {
+          setError(
+            "Invalid credentials. Please check your username and password."
+          );
+        } else if (
+          error &&
+          (error as any).response &&
+          (error as any).response.status === 500
+        ) {
           setError("Server error. Please try again later.");
         } else {
           setError("An error occurred. Please try again.");
@@ -56,16 +66,15 @@ const LoginForm: React.FC = () => {
     if (authError) {
       setError("" + authError);
     }
-  }
+  };
   const clearError = () => {
     setError("");
-  }
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    formik.handleChange(e); 
+    formik.handleChange(e);
     clearError();
   };
-  
 
   return (
     <div className="wrapper">
